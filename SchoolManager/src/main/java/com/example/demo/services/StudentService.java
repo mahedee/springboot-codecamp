@@ -14,8 +14,19 @@ public class StudentService {
 	@Autowired
 	private StudentRepository studentRepository;
 	
-	public List<StudentModel> getAllStudents()
-	{
+	public List<StudentModel> getAllStudents(){
 		return studentRepository.findAll();
+	}
+	
+	public StudentModel saveStudentInfo(StudentModel studentModel) {
+		return studentRepository.save(studentModel);
+	}
+	
+	public StudentModel editStudentInfo(StudentModel studentModel) {
+		return studentRepository.save(studentModel);
+	}
+	
+	public void deleteStudentInfo(int id) {
+		studentRepository.deleteById(id);
 	}
 }
