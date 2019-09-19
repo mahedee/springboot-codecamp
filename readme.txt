@@ -8,3 +8,5 @@ Agenda
 7.	Deploy to web server again
 
 •	Prepare documentation or capture as video
+
+Take a backup of database
